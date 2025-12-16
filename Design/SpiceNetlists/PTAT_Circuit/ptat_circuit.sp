@@ -1,9 +1,9 @@
 *** PTAT voltage generator
 
-.lib "../../../eda-technology/sky130/models/spice/models/sky130.lib.spice tt"
+.lib "../../../../eda-technology/sky130/models/spice/models/sky130.lib.spice tt"
 * Taking typical corner of the spice model
 
-.include "../../../eda-technology/sky130/models/spice/models/sky130_fd_pr__model__pnp.model.spice"
+.include "../../../../eda-technology/sky130/models/spice/models/sky130_fd_pr__model__pnp.model.spice"
 * Included the PMOS model file
 
 .global vdd gnd
