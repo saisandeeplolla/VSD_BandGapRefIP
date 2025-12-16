@@ -2,10 +2,10 @@
 **** ctat voltage generation circuit *****
 
 
-.lib "../../../../eda-technology/sky130/models/spice/models/sky130.lib.spice tt"
+.lib "/home/sai/skywater-pdk-libs-sky130_fd_pr/models/sky130.lib.spice" tt
 * Taking typical corner of the spice model
 
-.include "../../../../eda-technology/sky130/models/spice/models/sky130_fd_pr__model__pnp.model.spice"
+.include "/home/sai/skywater-pdk-libs-sky130_fd_pr/models/sky130_fd_pr__model__pnp.model.spice"
 * Included the PMOS model file
 
 
