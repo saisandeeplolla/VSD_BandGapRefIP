@@ -10,14 +10,17 @@
 | ![ctat_circuit_sim](../SpiceNetlists/CTAT_Circuit/ctat_circuit_sim.png) |
 |:----------------------:|
 | *Figure 1: CTAT voltage w.r.t temperature. [Spice Netlist](../SpiceNetlists/CTAT_Circuit/ctat_circuit_sim.sp).* |
+* The temp coefficient of CTAT = -1.75228mV/degC
 
 | ![ctat_circuit_sim_nrdevices](../SpiceNetlists/CTAT_Circuit/ctat_circuit_sim_nrdevices.png) |
 |:----------------------:|
-| *Figure 2: CTAT voltage w.r.t temperature and number of parallel device. [Spice Netlist](../SpiceNetlists/CTAT_Circuit/ctat_circuit_sim_nrdevices.sp).* |
+| *Figure 2: CTAT voltage w.r.t temperature with 8  parallel device. [Spice Netlist](../SpiceNetlists/CTAT_Circuit/ctat_circuit_sim_nrdevices.sp).* |
+* The temp coefficient can be seen to become negative to -1.91658mV/degC since more temp dependent devices are added to the circuit.
 
 | ![ctat_circuit_sim_load](../SpiceNetlists/CTAT_Circuit/ctat_circuit_sim_load.png) |
 |:----------------------:|
 | *Figure 3: CTAT voltage w.r.t temperature and load current. [Spice Netlist](../SpiceNetlists/CTAT_Circuit/ctat_circuit_sim_load.sp).* |
+* The temp coefficient can be seen to become less negative with increase in the branch current. This because higher branch current => higher Vbe => dVctat/dT gets higher see [CTAT_Equation](../../CTAT_Equation_Derivation.pdf). 
 
 ## PTAT Spice simulations
 
