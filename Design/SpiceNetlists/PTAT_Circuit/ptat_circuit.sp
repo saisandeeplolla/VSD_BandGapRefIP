@@ -11,7 +11,7 @@
 * Temperature
 
 *** vcvs definition; RefDes out+ out- in+ in-
-e1	net2	gnd	ra1	qp1	gain=100
+e1	net2	gnd	ra1	qp1	gain=1000
 * FETname drain gate source body model name length(in um) width(in um) multiplier
 xmp1    q1	net2   	vdd	vdd     sky130_fd_pr__pfet_01v8_lvt     l=2     w=5     m=4
 xmp2    q2    	net2    vdd     vdd     sky130_fd_pr__pfet_01v8_lvt     l=2     w=5     m=4
