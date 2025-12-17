@@ -4,6 +4,10 @@
 
 [ctat_circuit_sim.sp](../SpiceNetlists/CTAT_Circuit/ctat_circuit_sim.sp)
 
+| ![ctat_circuit_sim](../SpiceNetlists/CTAT_Circuit/ctat_circuit_sim.png) |
+|:----------------------:|
+| *Figure 1: CTAT circuit simulations* |
+
 ## PTAT Spice simulations
 
 [ptat_circuit.sp](../SpiceNetlists/PTAT_Circuit/ptat_circuit.sp)
