@@ -23,7 +23,7 @@ xqp2    gnd     gnd     qp2     sky130_fd_pr__pnp_05v5_W3p40L3p40       m=8
 
 *** high-poly resistance definition, xra1, xra2 in series with xra3//xra4
 * Sheet resistance of this model (sheet_res) = 350ohms, resistance = sheet_res*(L/W)
-* xra1 = xra2 = xra3 = xra4 = 320*(7.8/1.41) = 1.936kohms
+* xra1 = xra2 = xra3 = xra4 = 350*(7.8/1.41) = 1.936kohms
 xra1    ra1     na1     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41  	l=7.8
 xra2    na1     na2     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41	l=7.8
 xra3    na2     qp2     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41	l=7.8
