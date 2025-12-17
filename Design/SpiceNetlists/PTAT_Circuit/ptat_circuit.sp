@@ -40,7 +40,9 @@ vsup	vdd	gnd	dc 	2
 *** control statement
 .control
 run
-plot v(qp1) v(ra1) v(qp2) v(net2)
+plot v(qp1) v(ra1)
+plot v(qp1)-v(ra1)
+plot v(qp1) v(ra1) v(qp1)-v(ra1)
 plot vid1#branch vid2#branch
 .endc
 .end
