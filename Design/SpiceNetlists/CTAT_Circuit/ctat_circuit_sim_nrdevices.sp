@@ -12,7 +12,7 @@
 .temp 27
 
 *** bjt definition
-xqp1	gnd	gnd	qp1	gnd	sky130_fd_pr__pnp_05v5_W3p40L3p40	m={m}
+xqp1	gnd	gnd	qp1	gnd	sky130_fd_pr__pnp_05v5_W3p40L3p40	m=8
 
 *** supply voltage and current
 vsup	vdd	gnd	dc	2
@@ -20,7 +20,7 @@ isup	vdd	qp1	dc 	10u
 
 *** Simmulation
 .dc	temp	-40	125	5
-.step	param	m	1	8	1 
+*.step	param	m	1	8	1 
 
 *** control statement
 .control
