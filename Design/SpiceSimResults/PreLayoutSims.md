@@ -2,6 +2,11 @@
 
 ## CTAT Spice simulations
 
+| ![ctat_circuit](../SpiceNetlists/CTAT_Circuit/ctat_circuit.png) |
+|:----------------------:|
+| *Figure 1: CTAT circuit. [Spice Netlist](../SpiceNetlists/CTAT_Circuit/ctat_circuit_sim.sp).* |
+
+
 | ![ctat_circuit_sim](../SpiceNetlists/CTAT_Circuit/ctat_circuit_sim.png) |
 |:----------------------:|
 | *Figure 1: CTAT voltage w.r.t temperature. [Spice Netlist](../SpiceNetlists/CTAT_Circuit/ctat_circuit_sim.sp).* |
