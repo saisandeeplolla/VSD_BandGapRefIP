@@ -6,9 +6,9 @@
 
 ## PTAT Spice simulations
 
-[ctat_circuit_sim.sp](../SpiceNetlists/PTAT_Circuit/ptat_circuit_sim.sp)
+[ptat_circuit.sp](../SpiceNetlists/PTAT_Circuit/ptat_circuit.sp)
 
 
-| ![ptat_circuit_sim](../SpiceNetlists/PTAT_Circuit/ptat_circuit_sim.png) |
+| ![ptat_circuit](../SpiceNetlists/PTAT_Circuit/ptat_circuit.png) |
 |:----------------------:|
-| *Figure 1: PTAT circuit * |
+| *Figure 1: PTAT circuit* |
