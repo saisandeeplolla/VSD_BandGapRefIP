@@ -58,17 +58,19 @@
 | ![bgr_using_ideal_opamp_bgr](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp_bgr.png) |
 |:----------------------:|
 | *Figure 10: BGR voltage given by the BGR circuit. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp.sp)* |
-* It can be seen that across the whole temperature range, the BGR voltage changes by only a few ......
+* It can be seen that across the whole temperature range, the BGR voltage changes by only about 4mV from -40degC to 125degC 
 
 | ![bgr_using_ideal_opamp_ptat](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp_ptat.png) |
 |:----------------------:|
 | *Figure 11: V(vref)-V(qp3) & V(ra1) w.r.t temperature, i.e., the PTAT voltage and PTAT voltage before the 9x gain by R2 & R1. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp.sp)* |
 * The desired +ve temp coefficient, i.e., the +ve slope of the curve, can be seen again in the above figure.
+* It can be seen before the gain of x9, the temp coefficient is 0.186211mV/degC and after gain its 1.64897mV/degC i.e. apporx x9 increase.
+* With this gain the PTAT +ve temp coefficient is close to the CTAT's -ve temp coefficient.
 
 | ![bgr_using_ideal_opamp_ctat](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp_ctat.png) |
 |:----------------------:|
 | *Figure 12: V(qp3) w.r.t temperature, i.e., the CTAT voltage in the BGR circuit. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp.sp)* |
-* The desired -ve temp coefficient, identical to the previous CTAT simulation, can be seen again in the above figure.
+* The desired -ve temp coefficient of -1.65194mV/degV, identical to the previous CTAT simulation, can be seen again in the above figure.
 
 | ![bgr_using_ideal_opamp_branchcurrents](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp_branchcurrents.png) |
 |:----------------------:|
