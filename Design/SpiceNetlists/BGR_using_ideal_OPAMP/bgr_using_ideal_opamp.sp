@@ -31,7 +31,7 @@ xra2    na1     na2     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41	l=7.8
 xra3    na2     qp2     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41	l=7.8
 xra4    na2     qp2     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41	l=7.8
 * R2 = 45kohms
-xrb1    ref     nb1     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41	l=7.8
+xrb1    vref     nb1     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41	l=7.8
 xrb2    nb1     nb2     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41  	l=7.8
 xrb3    nb2     nb3     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41  	l=7.8
 xrb4    nb3     nb4     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41  	l=7.8
@@ -71,9 +71,11 @@ vsup    vdd     gnd     dc      2
 
 .control
 RUN
-plot v(vdd) v(qp1) v(ra1) v(qp2) v(qp3)
+plot v(qp3) 
+plot v(vref)-v(qp3) v(ra1)-v(qp2)
 plot vid1#branch vid2#branch vid3#branch 
-plot v(ref)
+plot v(vref)
+plot v(qp3) v(vref)-v(qp3) v(vref)
 .endc
 .end
 
