@@ -2,7 +2,7 @@
 
 *.lib "/opt/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice ff"
 
-.lib "/home/sai/skywater-pdk-libs-sky130_fd_pr/models/sky130.lib.spice" tt
+.lib "/home/sai/skywater-pdk-libs-sky130_fd_pr/models/sky130.lib.spice" ff
 * Taking typical corner of the spice model
 
 .include "/home/sai/skywater-pdk-libs-sky130_fd_pr/models/sky130_fd_pr__model__pnp.model.spice"
