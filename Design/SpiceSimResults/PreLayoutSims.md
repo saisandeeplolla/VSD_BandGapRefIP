@@ -95,7 +95,7 @@
 
 | ![bgr_startup](../SpiceNetlists/BGR/bgr_startup.png) |
 |:----------------------:|
-| *Figure 16: BGR start-up node voltages V(net1), V(net2), V(net6), V(qp1), V(vdd), V(vref). [Spice Netlist](../SpiceNetlists/BGR/bgr.sp)* |
+| *Figure 16: BGR start-up node voltages V(net1), V(net2), V(net6), V(qp1), V(vdd), V(vref). [Spice Netlist](../SpiceNetlists/BGR/bgr_startup.sp)* |
 * 
 
 
