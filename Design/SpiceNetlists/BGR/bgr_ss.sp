@@ -2,7 +2,7 @@
 
 *.lib "/opt/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice ss"
 
-.lib "/home/sai/skywater-pdk-libs-sky130_fd_pr/models/sky130.lib.spice" tt
+.lib "/home/sai/skywater-pdk-libs-sky130_fd_pr/models/sky130.lib.spice" ss
 * Taking typical corner of the spice model
 
 .include "/home/sai/skywater-pdk-libs-sky130_fd_pr/models/sky130_fd_pr__model__pnp.model.spice"
@@ -74,8 +74,8 @@ vsup	vdd	gnd	dc 	2
 
 .control
 run
-
-plot v(vdd) v(net1) v(net2) v(qp1) v(ra1) v(qp2) v(vref) v(qp3)
+plot v(vref)
+*plot v(vdd) v(net1) v(net2) v(qp1) v(ra1) v(qp2) v(vref) v(qp3)
 plot vid1#branch vid2#branch vid3#branch vid4#branch vid5#branch
 
 .endc

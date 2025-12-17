@@ -106,7 +106,7 @@
 
 | ![bgr_startup_v](../SpiceNetlists/BGR/bgr_startup_v.png) |
 |:----------------------:|
-| *Figure 19: BGR node voltages V(net1), V(net2), V(net6), V(qp1), V(vdd), V(vref). [Spice Netlist](../SpiceNetlists/BGR/bgr_startup.sp)* |
+| *Figure 19: BGR node voltages V(net1), V(net2), V(net6), V(qp1), V(qp3), V(ra1), 	V(vdd), V(vref). [Spice Netlist](../SpiceNetlists/BGR/bgr_startup.sp)* |
 * Details about how nodal voltages follow the supply and stuff
 
 | ![bgr_startup_i](../SpiceNetlists/BGR/bgr_startup_i.png) |

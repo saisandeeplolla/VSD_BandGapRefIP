@@ -75,7 +75,8 @@ vsup	vdd	gnd	dc 	2
 .control
 run
 
-plot v(vdd) v(net1) v(net2) v(qp1) v(ra1) v(qp2) v(vref) v(qp3)
+plot v(vref)
+*plot v(vdd) v(net1) v(net2) v(qp1) v(ra1) v(qp2) v(vref) v(qp3)
 plot vid1#branch vid2#branch vid3#branch vid4#branch vid5#branch
 
 .endc
