@@ -41,8 +41,8 @@ vsup	vdd	gnd	dc 	2
 .control
 run
 plot v(qp1) v(ra1)
-plot v(qp1)-v(ra1)
-plot v(qp1) v(ra1) v(qp1)-v(ra1)
+plot v(ra1)-v(qp2)
+plot v(qp1) v(ra1) v(ra1)-v(qp2)
 plot vid1#branch vid2#branch
 .endc
 .end
