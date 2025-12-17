@@ -70,7 +70,7 @@
 | ![bgr_using_ideal_opamp_ctat](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp_ctat.png) |
 |:----------------------:|
 | *Figure 12: V(qp3) w.r.t temperature, i.e., the CTAT voltage in the BGR circuit. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp.sp)* |
-* The desired -ve temp coefficient of -1.65194mV/degV, identical to the previous CTAT simulation, can be seen again in the above figure.
+* The desired -ve temp coefficient of -1.65194mV/degC, identical to the previous CTAT simulation, can be seen again in the above figure.
 
 | ![bgr_using_ideal_opamp_branchcurrents](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp_branchcurrents.png) |
 |:----------------------:|
@@ -80,7 +80,7 @@
 | ![bgr_using_ideal_opamp_allvoltages](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp_allvoltages.png) |
 |:----------------------:|
 | *Figure 14: BGR, PTAT & CTAT voltages w.r.t temperature. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp.sp)* |
-* BGR is shown in .. color, PTAT is shown .. color and CTAT is shown in .. color.
+* BGR is shown in orange color, PTAT is shown blue color and CTAT is shown in red color.
 
 ## BGR Spice simulation
 
