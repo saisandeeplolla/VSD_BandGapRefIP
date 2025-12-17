@@ -15,6 +15,7 @@ Note: There is a bug in [sky130_fd_pr__nfet_05v0_nvt.pm3.spice](https://github.c
 Line 16 does not have a '.' in front of the include statement, and ngspice treats it as a current source. So either comment it out or add '.' for simulating the spice files in this repo.
 The same issue has already been raised here [issue#286](https://github.com/google/skywater-pdk/issues/286)
 
+## Workshop
 The Lecture/Theory notes can be found here [VSD_BandGapIP.pdf](./VSD_BandGapIP.pdf)
 
 The workshop assignments can be found here:
