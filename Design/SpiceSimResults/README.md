@@ -2,8 +2,6 @@
 
 ## CTAT Spice simulations
 
-
-
 | ![ctat_circuit_sim](../SpiceNetlists/CTAT_Circuit/ctat_circuit_sim.png) |
 |:----------------------:|
 | *Figure 1: CTAT voltage w.r.t temperature. [Spice Netlist](../SpiceNetlists/CTAT_Circuit/ctat_circuit_sim.sp).* |
@@ -17,8 +15,6 @@
 | *Figure 3: CTAT voltage w.r.t temperature and load current. [Spice Netlist](../SpiceNetlists/CTAT_Circuit/ctat_circuit_sim_load.sp).* |
 
 ## PTAT Spice simulations
-
-
 
 | ![ptat_circuit](../SpiceNetlists/PTAT_Circuit/ptat_circuit.png) |
 |:----------------------:|
@@ -73,5 +69,15 @@
 
 | ![bgr_using_ideal_opamp_allvoltages](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp_allvoltages.png) |
 |:----------------------:|
-| *Figure 13: BGR, PTAT & CTAT voltages w.r.t temperature. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp.sp)* |
+| *Figure 14: BGR, PTAT & CTAT voltages w.r.t temperature. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp.sp)* |
 * BGR is shown in , PTAT is shown, CTAT is shown in
+
+## BGR Spice simulation
+
+| ![bgr](../SpiceNetlists/BGR/bgr.png) |
+|:----------------------:|
+| *Figure 15: BGR. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr.sp)* |
+
+| ![bgr_tt](../SpiceNetlists/BGR/bgr_tt.png) |
+|:----------------------:|
+| *Figure 16: BGR typical corner simulation. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr.sp)* |
