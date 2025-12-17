@@ -12,7 +12,10 @@
 
 [ptat_circuit.sp](../SpiceNetlists/PTAT_Circuit/ptat_circuit.sp)
 
-
 | ![ptat_circuit](../SpiceNetlists/PTAT_Circuit/ptat_circuit.png) |
 |:----------------------:|
-| *Figure 1: PTAT circuit* |
+| *Figure 2: PTAT circuit* |
+
+| ![ptat_circuit_vqp1](../SpiceNetlists/PTAT_Circuit/ptat_circuit_vqp1.png) |
+|:----------------------:|
+| *Figure 3: V(qp1) of PTAT circuit* |
