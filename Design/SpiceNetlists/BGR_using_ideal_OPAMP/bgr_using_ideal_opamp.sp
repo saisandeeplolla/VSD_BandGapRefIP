@@ -14,10 +14,10 @@
 *** vcvs definition
 e1 net2 gnd ra1 qp1 gain=1000
 
-
-xmp1    qp1		net2   	vdd		vdd     sky130_fd_pr__pfet_01v8_lvt     l=2     w=5     m=4
-xmp2    ra1 	net2   	vdd     vdd     sky130_fd_pr__pfet_01v8_lvt     l=2     w=5     m=4
-xmp3    ref		net2    vdd     vdd     sky130_fd_pr__pfet_01v8_lvt     l=2     w=5     m=4
+*** fet definition
+xmp1    q1		net2   	vdd		vdd     sky130_fd_pr__pfet_01v8_lvt     l=2     w=5     m=4
+xmp2    q2 		net2   	vdd     vdd     sky130_fd_pr__pfet_01v8_lvt     l=2     w=5     m=4
+xmp3    q3		net2    vdd     vdd     sky130_fd_pr__pfet_01v8_lvt     l=2     w=5     m=4
 	
 *** bjt definition
 xqp1	gnd		gnd		qp1			sky130_fd_pr__pnp_05v5_W3p40L3p40		m=1
@@ -57,11 +57,13 @@ xrb23   nb22    qp3     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41  	l=7.
 xrb24   nb22    qp3     vdd     sky130_fd_pr__res_high_po_1p41     w=1.41  	l=7.8
 
 *** voltage source for current measurement
+vid1	q1	qp1		dc	0
+vid2	q2	ra1		dc	0
+vid3	q3	vref	dc	0
 
 *** supply voltage
 vsup    vdd     gnd     dc      2
 *.dc    vsup    0       3.3     0.3.3
-
 .dc	temp    -40     125     5
 
 *vsup    vdd     gnd     pulse   0       2       10n     1u      1u      1m      100u
@@ -69,10 +71,9 @@ vsup    vdd     gnd     dc      2
 
 .control
 RUN
-plot v(vdd) v(qp1) v(ra1) v(qp2) v(ref) v(qp3)
+plot v(vdd) v(qp1) v(ra1) v(qp2) v(qp3)
+plot vid1#branch vid2#branch vid3#branch 
 plot v(ref)
-
-
 .endc
 .end
 
