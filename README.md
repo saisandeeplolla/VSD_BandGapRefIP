@@ -19,7 +19,7 @@ The same issue has already been raised here [issue#286](https://github.com/googl
 The Lecture/Theory notes can be found here [VSD_BandGapIP.pdf](./VSD_BandGapIP.pdf)
 
 The workshop assignments can be found here:
-* [Pre layout spice simulations](./Design/SpiceSims/README.md)
+* [Pre layout spice simulations](./Design/SpiceSimResults/README.md)
 
 
 
