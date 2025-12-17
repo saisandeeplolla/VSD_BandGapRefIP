@@ -76,8 +76,8 @@
 
 | ![bgr](../SpiceNetlists/BGR/bgr.png) |
 |:----------------------:|
-| *Figure 15: BGR. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr.sp)* |
+| *Figure 15: BGR. [Spice Netlist](../SpiceNetlists/BGR/bgr.sp)* |
 
 | ![bgr_tt](../SpiceNetlists/BGR/bgr_tt.png) |
 |:----------------------:|
-| *Figure 16: BGR typical corner simulation. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr.sp)* |
+| *Figure 16: BGR typical corner simulation. [Spice Netlist](../SpiceNetlists/BGR/bgr.sp)* |
