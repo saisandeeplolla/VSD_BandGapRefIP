@@ -81,7 +81,8 @@
 | ![bgr_tt](../SpiceNetlists/BGR/bgr_tt.png) |
 |:----------------------:|
 | *Figure 16: BGR typical corner V(vref) simulation. [Spice Netlist](../SpiceNetlists/BGR/bgr.sp)* |
-* From the above image, it can be seen that in the temperature range of -40degC to 125degC, we see a Vmax = 1.1100V at about 27degC & Vmin = 1.10575V at about -40degC => uV/degC = (1.1100-1.10575)/(125-(-40)) = 25.75uV/degC
+* From the above image, it can be seen that in the temperature range of -40degC(Tmin) to 125degC(Tmax), we see a Vmax = 1.1100V at about 27degC & Vmin = 1.10575V at about -40degC => uV/degC = $\frac{Vmax-Vmin}{Tmax-Tmin}$ = $\frac{1.1100-1.10575}{125-(-40)}$ = 25.75uV/degC
+* From the above figure, Vmean = 1.10775V =>ppm/degC = $\frac{Vmax-Vmin}{Vmean} * 10^6 * \frac{1}{Tmax-Tmin}$ = $\frac{1.1100-1.10575}{1.10775}* 10^6 * \frac{1}{125-(-40)}$ = 23.5215ppm/degC
 
 | ![bgr_ss](../SpiceNetlists/BGR/bgr_ss.png) |
 |:----------------------:|
@@ -93,10 +94,11 @@
 | *Figure 16: BGR fast corner V(vref) simulation. [Spice Netlist](../SpiceNetlists/BGR/bgr.sp)* |
 * From the above image,
 
-| ![bgr_startup](../SpiceNetlists/BGR/bgr_startup.png) |
+| ![bgr_startup_v](../SpiceNetlists/BGR/bgr_startup_v.png) |
 |:----------------------:|
 | *Figure 16: BGR start-up node voltages V(net1), V(net2), V(net6), V(qp1), V(vdd), V(vref). [Spice Netlist](../SpiceNetlists/BGR/bgr_startup.sp)* |
-* 
+* Details about how nodal voltages follow the supply and stuff
+
 
 
 
