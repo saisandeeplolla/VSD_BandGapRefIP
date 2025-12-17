@@ -86,20 +86,23 @@
 
 | ![bgr_ss](../SpiceNetlists/BGR/bgr_ss.png) |
 |:----------------------:|
-| *Figure 16: BGR slow corner V(vref) simulation. [Spice Netlist](../SpiceNetlists/BGR/bgr.sp)* |
+| *Figure 17: BGR slow corner V(vref) simulation. [Spice Netlist](../SpiceNetlists/BGR/bgr.sp)* |
 * From the above image,
 
 | ![bgr_ff](../SpiceNetlists/BGR/bgr_ff.png) |
 |:----------------------:|
-| *Figure 16: BGR fast corner V(vref) simulation. [Spice Netlist](../SpiceNetlists/BGR/bgr.sp)* |
+| *Figure 18: BGR fast corner V(vref) simulation. [Spice Netlist](../SpiceNetlists/BGR/bgr.sp)* |
 * From the above image,
 
 | ![bgr_startup_v](../SpiceNetlists/BGR/bgr_startup_v.png) |
 |:----------------------:|
-| *Figure 16: BGR start-up node voltages V(net1), V(net2), V(net6), V(qp1), V(vdd), V(vref). [Spice Netlist](../SpiceNetlists/BGR/bgr_startup.sp)* |
+| *Figure 19: BGR node voltages V(net1), V(net2), V(net6), V(qp1), V(vdd), V(vref). [Spice Netlist](../SpiceNetlists/BGR/bgr_startup.sp)* |
 * Details about how nodal voltages follow the supply and stuff
 
-
+| ![bgr_startup_i](../SpiceNetlists/BGR/bgr_startup_i.png) |
+|:----------------------:|
+| *Figure 20: BGR node/branch currents id1 (CTAT branch), id2 (PTAT branch), id3(Ref branch), id4(Current injector branch), id5(start-up branch). [Spice Netlist](../SpiceNetlists/BGR/bgr_startup.sp)* |
+* Details about how nodal currents follows the supply and stuff
 
 
 
