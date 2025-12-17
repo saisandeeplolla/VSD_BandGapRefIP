@@ -51,12 +51,27 @@
 |:----------------------:|
 | *Figure 9: BGR using an ideal opamp circuit. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp.sp)* |
 
+| ![bgr_using_ideal_opamp_bgr](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp_bgr.png) |
+|:----------------------:|
+| *Figure 10: BGR voltage given by the BGR circuit. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp.sp)* |
+* It can be seen that across the whole temperature range, the BGR voltage changes by only a few ......
+
 | ![bgr_using_ideal_opamp_ptat](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp_ptat.png) |
 |:----------------------:|
-| *Figure 10: V(ra1)-V(qp2) w.r.t temperature i.e. the PTAT voltage in the BGR circuit. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp.sp)* |
+| *Figure 11: V(vref)-V(qp3) & V(ra1) w.r.t temperature, i.e., the PTAT voltage and PTAT voltage before the 9x gain by R2 & R1. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp.sp)* |
 * The desired +ve temp coefficient, i.e., the +ve slope of the curve, can be seen again in the above figure.
 
 | ![bgr_using_ideal_opamp_ctat](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp_ctat.png) |
 |:----------------------:|
-| *Figure 11: V(qp3) w.r.t temperature i.e. the CTAT voltage in the BGR circuit. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp.sp)* |
-* The desired -ve temp coefficient, i.e., the -ve slope of the curve, can be seen again in the above figure.
+| *Figure 12: V(qp3) w.r.t temperature, i.e., the CTAT voltage in the BGR circuit. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp.sp)* |
+* The desired -ve temp coefficient, identical to the previous CTAT simulation, can be seen again in the above figure.
+
+| ![bgr_using_ideal_opamp_branchcurrents](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp_branchcurrents.png) |
+|:----------------------:|
+| *Figure 13: Id1, Id2 & Id3 w.r.t temperature, i.e., the branch currents in the BGR circuit. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp.sp)* |
+* The branch currents are again close to what was calculated.
+
+| ![bgr_using_ideal_opamp_allvoltages](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp_allvoltages.png) |
+|:----------------------:|
+| *Figure 13: BGR, PTAT & CTAT voltages w.r.t temperature. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp.sp)* |
+* BGR is shown in , PTAT is shown, CTAT is shown in
