@@ -70,7 +70,7 @@
 | ![bgr_using_ideal_opamp_allvoltages](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp_allvoltages.png) |
 |:----------------------:|
 | *Figure 14: BGR, PTAT & CTAT voltages w.r.t temperature. [Spice Netlist](../SpiceNetlists/BGR_using_ideal_OPAMP/bgr_using_ideal_opamp.sp)* |
-* BGR is shown in , PTAT is shown, CTAT is shown in
+* BGR is shown in .. color, PTAT is shown .. color and CTAT is shown in .. color.
 
 ## BGR Spice simulation
 
@@ -80,4 +80,25 @@
 
 | ![bgr_tt](../SpiceNetlists/BGR/bgr_tt.png) |
 |:----------------------:|
-| *Figure 16: BGR typical corner simulation. [Spice Netlist](../SpiceNetlists/BGR/bgr.sp)* |
+| *Figure 16: BGR typical corner V(vref) simulation. [Spice Netlist](../SpiceNetlists/BGR/bgr.sp)* |
+* From the above image, it can be seen that in the temperature range of -40degC to 125degC, we see a Vmax = 1.1100V at about 27degC & Vmin = 1.10575V at about -40degC => uV/degC = (1.1100-1.10575)/(125-(-40)) = 25.75uV/degC
+
+| ![bgr_ss](../SpiceNetlists/BGR/bgr_ss.png) |
+|:----------------------:|
+| *Figure 16: BGR slow corner V(vref) simulation. [Spice Netlist](../SpiceNetlists/BGR/bgr.sp)* |
+* From the above image,
+
+| ![bgr_ff](../SpiceNetlists/BGR/bgr_ff.png) |
+|:----------------------:|
+| *Figure 16: BGR fast corner V(vref) simulation. [Spice Netlist](../SpiceNetlists/BGR/bgr.sp)* |
+* From the above image,
+
+| ![bgr_startup](../SpiceNetlists/BGR/bgr_startup.png) |
+|:----------------------:|
+| *Figure 16: BGR start-up node voltages V(net1), V(net2), V(net6), V(qp1), V(vdd), V(vref). [Spice Netlist](../SpiceNetlists/BGR/bgr.sp)* |
+* 
+
+
+
+
+
