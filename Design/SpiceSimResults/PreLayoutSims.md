@@ -46,7 +46,7 @@
 | ![ptat_circuit_id1_id2](../SpiceNetlists/PTAT_Circuit/ptat_circuit_id1_id2.png) |
 |:----------------------:|
 | *Figure 8: Id1 & Id2 w.r.t temperature of the PTAT circuit. [Spice Netlist](../SpiceNetlists/PTAT_Circuit/ptat_circuit.sp)* |
-* As shown in the figure, the branch current is =
+* As shown in the figure, the branch current is = 10.8456uA
 * This is because the R1 is chosen to be 5kohms => I = Vt*ln(N)/R1 with N = 8 => I = 10uA. The simulation also matches our calculation.
 
 ## BGR with ideal OP-AMP Spice simulation
@@ -97,22 +97,28 @@
 | ![bgr_ss](../SpiceNetlists/BGR/bgr_ss.png) |
 |:----------------------:|
 | *Figure 17: BGR slow corner V(vref) simulation. [Spice Netlist](../SpiceNetlists/BGR/bgr.sp)* |
-* From the above image,
+* For the slow corner simulation, it can be seen that in the temperature range of -40degC(Tmin) to 125degC(Tmax), we see a Vmax = 1.0978V at about 50degC & Vmin = 1.0893V at about -40degC => uV/degC = $\frac{Vmax-Vmin}{Tmax-Tmin}$ = $\frac{1.0978-1.0893}{125-(-40)}$ = 51.5151uV/degC
+* From the above figure, Vmean = 1.0938V =>ppm/degC = $\frac{Vmax-Vmin}{Vmean} * 10^6 * \frac{1}{Tmax-Tmin}$ = $\frac{1.0978-1.0893}{1.0938}* 10^6 * \frac{1}{125-(-40)}$ = 47.09741ppm/degC
 
 | ![bgr_ff](../SpiceNetlists/BGR/bgr_ff.png) |
 |:----------------------:|
 | *Figure 18: BGR fast corner V(vref) simulation. [Spice Netlist](../SpiceNetlists/BGR/bgr.sp)* |
-* From the above image,
+* For the fast corner simulation, it can be seen that in the temperature range of -40degC(Tmin) to 125degC(Tmax), we see a Vmax = 1.12225V at about 15degC & Vmin = 1.12038V at about -40degC => uV/degC = $\frac{Vmax-Vmin}{Tmax-Tmin}$ = $\frac{1.12225-1.12038}{125-(-40)}$ = 11.3333uV/degC
+* From the above figure, Vmean = 1.1213V =>ppm/degC = $\frac{Vmax-Vmin}{Vmean} * 10^6 * \frac{1}{Tmax-Tmin}$ = $\frac{1.0978-1.0893}{1.1213V}* 10^6 * \frac{1}{125-(-40)}$ = 10.1073ppm/degC
 
 | ![bgr_startup_v](../SpiceNetlists/BGR/bgr_startup_v.png) |
 |:----------------------:|
 | *Figure 19: BGR node voltages V(net1), V(net2), V(net6), V(qp1), V(qp3), V(ra1), 	V(vdd), V(vref). [Spice Netlist](../SpiceNetlists/BGR/bgr_startup.sp)* |
-* Details about how nodal voltages follow the supply and stuff
+* In the beginning with VDD = 0V, all the node voltages are 0V.
+* As VDD increases, net2 can be seen to increase and follow VDD. That is, there is no current in any of the branches since all the P-FETs will be off.
+* Around 1us, net1 can be seen to increase, while net can be seen to decrease. This occurs because the startup circuit starts injecting current into the net1 node, thereby increasing the nodal voltage. This is also evident in the following figure of the branch currents.
 
 | ![bgr_startup_i](../SpiceNetlists/BGR/bgr_startup_i.png) |
 |:----------------------:|
 | *Figure 20: BGR node/branch currents id1 (CTAT branch), id2 (PTAT branch), id3(Ref branch), id4(Current injector branch), id5(start-up branch). [Spice Netlist](../SpiceNetlists/BGR/bgr_startup.sp)* |
-* Details about how nodal currents follows the supply and stuff
+* As discussed previously, none of the branches consumes any current from the supply initially.
+* The vid4#branch i.e., the current between the drain of MP6 and the drain of MN1 i.e., node net6, can be seen to increase i.e., the startup current is being injected.
+* After all the branches start consuming currents of about 10.8uA, the startup circuit can be seen to stop the injection of the current.
 
 
 
